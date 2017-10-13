@@ -1,0 +1,12 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"appid": "wx5d2571786e6cbb49",
+	"projectname": "test",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true
+	}
+}
