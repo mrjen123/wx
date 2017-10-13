@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    phones: ['123','456']
   
   },
 
@@ -62,5 +63,23 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  open: function () {
+    this.test();
+    wx.showActionSheet({
+      itemList: this.data.phones,
+      success: function (res) {
+        if (!res.cancel) {
+          this.test()
+        }
+      }
+    });
+  },
+
+
+  test: function (){
+    console.log(this.data.phones[1])
   }
+ 
 })
+module.exports.test = test;  
