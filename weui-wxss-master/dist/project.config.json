@@ -10,6 +10,7 @@
 	"libVersion": "1.5.4",
 	"appid": "wx5d2571786e6cbb49",
 	"projectname": "weui",
+	"miniprogramRoot": "./",
 	"condition": {
 		"weapp": {
 			"current": -1,

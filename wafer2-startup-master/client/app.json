@@ -1,14 +1,31 @@
 {
   "pages": [
+    "pages/market/market",
     "pages/info/info",
+    "pages/chat/chat",
     "pages/index/index",
-    "pages/chat/chat"
-   
+    "pages/publish/publish"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "邻里广场",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/market/market",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "宝典"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我"
+      }
+    ]
   }
 }
