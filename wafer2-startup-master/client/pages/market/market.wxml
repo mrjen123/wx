@@ -1,0 +1,24 @@
+<scroll-view scroll-y="true" style="height: 100%; width: 100%; display: flex; flex-direction: column;">
+  <view style="width: 100%; height: auto; margin-bottom:10px;">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <swiper indicator-dots="{{false}}" autoplay="{{false}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item>
+      <view class="big-logo">
+        <block wx:for-items="{{logos}}" wx:key="*this">
+          <view class="logoinfo">
+            <image style="width:100rpx; height: 100rpx;" src="{{item.image}}" mode="aspectFit" />
+            <text class="logotext">{{item.title}}</text>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+  </swiper>
+
+</scroll-view>
